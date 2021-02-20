@@ -1,0 +1,48 @@
+/*========== BASE ==========*/
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*========== SECTION ==========*/
+.section {
+  padding: 4rem 0;
+}
+
+.section__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.section__box {
+  width: 200px;
+  height: 200px;
+  border-radius: .5rem;
+  margin-bottom: 2rem;
+}
+
+.section__box-color1 {
+  background-color: #4D5BF9;
+}
+
+.section__box-color2 {
+  background-color: #4DCEF9;
+}
+
+/*========== MEDIA QUERIES==========*/
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 0;
+  }
+  .section__container {
+    height: 100vh;
+    flex-direction: row;
+    align-items: center;
+  }
+}
