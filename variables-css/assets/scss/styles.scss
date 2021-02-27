@@ -1,0 +1,72 @@
+/*===== GOOGLE FONT =====*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+/*===== VARIABLES CSS =====*/
+:root{
+
+    /* Colors */
+    --first-color: #4D5BF9;
+    --second-color: #4DCEF9;
+    --title-color: #FFF;
+    --text-color: #E0E0E0;
+    --body-color: #EBECFF;
+
+    /* Font and typography */
+    --body-font: 'Poppins', sans-serif;
+    --h1-font-size: 2.8rem;
+    --text-font-size: 1rem; 
+}
+
+/*========== BASE ==========*/
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+    background-color: var(--body-color);
+}
+
+/*========== SOCIAL ==========*/
+.social{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    &__box{
+        padding: 2rem 2.5rem;
+        background-color: var(--first-color);
+        border-radius: .5rem;
+        text-align: center;
+    }
+    &__box1{
+        background-color: var(--second-color);
+    }
+
+    &__subtitle, &__number{
+        margin: 0;
+    }
+
+    &__subtitle{
+        font-size: var(--text-font-size);
+        color: var(--text-color);
+    }
+    &__number{
+        margin: 0;
+        font-size: var(--h1-font-size);
+        color: var(--title-color);
+    }
+}
+
+/*========== MEDIA QUERIES==========*/
+@media screen and(min-width: 768px){
+    .social{
+        flex-direction: row;
+        gap: 4rem;
+    }
+}
